@@ -8,16 +8,10 @@ public class Mall {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String name;
-
     private String location;
-
     private int floorCount;
-
     private String category;
-
-    // NEW (สำหรับ Map)
     private double latitude;
     private double longitude;
 
@@ -59,7 +53,6 @@ public class Mall {
         this.category = category;
     }
 
-    // LATITUDE
     public double getLatitude() {
         return latitude;
     }
@@ -68,7 +61,6 @@ public class Mall {
         this.latitude = latitude;
     }
 
-    // LONGITUDE
     public double getLongitude() {
         return longitude;
     }
