@@ -14,15 +14,21 @@ public class RestaurantController {
     @Autowired
     private RestaurantRepository restaurantRepository;
 
-    // GET ALL
+    // ✅ GET ALL
     @GetMapping("/restaurants")
     public List<Restaurant> getAllRestaurants(){
         return restaurantRepository.findAll();
     }
 
-    // ADD
+    // ✅ ADD
     @PostMapping("/restaurants")
     public Restaurant addRestaurant(@RequestBody Restaurant restaurant){
         return restaurantRepository.save(restaurant);
+    }
+
+    // 🔥🔥🔥 ADD THIS (สำคัญสุด)
+    @GetMapping("/restaurants/search")
+    public List<Restaurant> searchRestaurants(@RequestParam String name) {
+        return restaurantRepository.findByNameContainingIgnoreCase(name);
     }
 }
