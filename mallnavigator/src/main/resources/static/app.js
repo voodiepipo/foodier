@@ -138,35 +138,33 @@ function searchRestaurant(){
     });
     
     }
-    function searchRestaurant(){
+function searchRestaurant(){
 
-        let name = document.getElementById("searchInput").value;
+    let name = document.getElementById("searchInput").value;
         
         fetch("/restaurants/search?name=" + name)
         .then(res => res.json())
         .then(data => {
         
-        let list = document.getElementById("mallList");
+    let list = document.getElementById("mallList");
         
         list.innerHTML="";
         
         data.forEach(r => {
         
-        let card = `
+    let card = `
         <div class="card">
-        
-        <h3>${r.name}</h3>
-        
-        <p><b>Category:</b> ${r.category}</p>
+            <h3>${r.name}</h3>
+            <p>
+                <b>Category:</b> 
+                ${r.category}
+            </p>
         
         <p><b>Mall:</b> ${r.mall.name}</p>
         
         </div>
         `;
-        
-        list.innerHTML += card;
-        
+    list.innerHTML += card;
         });
-        
-        });
-        }
+    });
+}
