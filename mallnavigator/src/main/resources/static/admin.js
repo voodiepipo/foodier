@@ -1,9 +1,7 @@
-// ไปหน้า add
 function goAdd(){
     window.location.href = "add-restaurant.html";
 }
 
-// ADD RESTAURANT
 function addRestaurant(){
 
     const restaurant = {
@@ -43,14 +41,12 @@ function addRestaurant(){
 
 }
 
-// โหลดร้านทั้งหมด
 window.onload = function(){
     if(document.getElementById("restaurantList")){
         loadRestaurants();
     }
 }
 
-// LOAD DATA
 function loadRestaurants(){
 
     const table = document.getElementById("restaurantList");
