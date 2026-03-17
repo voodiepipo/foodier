@@ -1,7 +1,9 @@
 # 🍜 Foodier
 
 Foodier is a restaurant search and mall navigation web application.
+## 📸 Screenshots
 
+![Foodier UI](./screenshots/foodier1.png)
 ## 🚀 Features
 - Search restaurants
 - View restaurant details
