@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Foodier Admin</title>
+<link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+
+<div class="logo">🍜 Foodier</div>
+
+<div class="nav-right">
+<a href="index.html">Home</a>
+<a href="#">Events</a>
+<a href="#">Festival</a>
+<a href="#">Booking</a>
+<a href="#">Restaurants</a>
+<a href="admin.html">Admin</a>
+</div>
+
+</div>
+
+<!-- ADMIN PANEL -->
+<div class="admin-container">
+
+<h2>Restaurant Management</h2>
+
+<div class="top-bar">
+
+<input
+type="text"
+placeholder="Search Restaurant..."
+id="searchInput"
+>
+
+<button onclick="goAdd()">
++ Add Restaurant
+</button>
+
+</div>
+
+<!-- HEADER -->
+<div class="restaurant-row header">
+<span>Name</span>
+<span>Mall</span>
+<span>Floor</span>
+<span>Status</span>
+<span>Action</span>
+</div>
+
+<!-- RESTAURANT LIST -->
+<div id="restaurantList" class="restaurant-list"></div>
+
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>

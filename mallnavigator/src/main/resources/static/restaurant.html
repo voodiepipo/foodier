@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Restaurant</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="navbar">
+
+<div class="logo">🍜 Foodier</div>
+
+<div class="nav-right">
+<a href="index.html">Home</a>
+<a href="#">Events</a>
+<a href="#">Festival</a>
+<a href="#">Booking</a>
+<a href="#">Restaurants</a>
+<a href="admin.html">Admin</a>
+</div>
+
+</div>
+
+
+<div class="container">
+
+<h1 id="name"></h1>
+
+<p>Mall: <span id="mall"></span></p>
+
+<p>Floor: <span id="floor"></span></p>
+
+<p>Category: <span id="category"></span></p>
+
+</div>
+
+
+<script>
+
+const params = new URLSearchParams(window.location.search);
+const id = params.get("id");
+
+fetch(`/restaurants/${id}`)
+.then(res => res.json())
+.then(data => {
+
+document.getElementById("name").innerText = data.name;
+document.getElementById("mall").innerText = data.mall.name;
+document.getElementById("floor").innerText = data.floor;
+document.getElementById("category").innerText = data.category;
+
+});
+
+</script>
+
+</body>
+</html>

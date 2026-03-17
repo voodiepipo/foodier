@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Add Restaurant</title>
+<link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+
+<div class="form-page">
+
+    <div class="form-card">
+
+        <h2>Add Restaurant</h2>
+        <p class="subtitle">Fill in restaurant details</p>
+
+        <form onsubmit="addRestaurant(); return false;">
+
+            <div class="input-group">
+                <label>Name</label>
+                <input type="text" id="name" placeholder="e.g. MK Restaurant" required>
+            </div>
+
+            <div class="input-group">
+                <label>Mall</label>
+                <input type="text" id="mall" placeholder="e.g. Central World" required>
+            </div>
+
+            <div class="input-group">
+                <label>Floor</label>
+                <input type="text" id="floor" placeholder="e.g. 3" required>
+            </div>
+
+            <div class="input-group">
+                <label>Category</label>
+                <input type="text" id="category" placeholder="e.g. Thai, Japanese" required>
+            </div>
+
+            <div class="row">
+                <div class="input-group">
+                    <label>Latitude</label>
+                    <input type="text" id="latitude" placeholder="13.7563" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Longitude</label>
+                    <input type="text" id="longitude" placeholder="100.5018" required>
+                </div>
+            </div>
+
+            <button type="submit" class="btn-primary">
+                + Add Restaurant
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>

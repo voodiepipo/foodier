@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-MallnavigatorApplication<mallnavigator>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.vootichote.mallnavigator.MallnavigatorApplication",
+            "projectName": "mallnavigator",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
