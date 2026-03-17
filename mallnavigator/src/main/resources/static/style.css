@@ -3,9 +3,7 @@ body{
     margin:0;
     background:#f5f5f5;
     }
-    
-    /* NAVBAR */
-    
+
     .navbar{
     display:flex;
     justify-content:space-between;
@@ -42,9 +40,7 @@ body{
     color:#ff5a5f;
     font-weight:600;
     }
-    
-    /* HERO */
-    
+   
     .hero{
     text-align:center;
     margin-top:120px;
@@ -59,8 +55,6 @@ body{
     font-size:20px;
     color:#666;
     }
-    
-    /* SEARCH */
     
     .searchBox{
     display:flex;
@@ -91,8 +85,6 @@ body{
     background:#e04848;
     }
     
-    /* RESULTS */
-    
     .container{
     width:1000px;
     margin:auto;
@@ -104,8 +96,6 @@ body{
     gap:25px;
     margin-top:40px;
     }
-    
-    /* CARD */
     
     .card{
     background:white;
@@ -123,43 +113,43 @@ body{
     margin-top:0;
     }
     #results{
-max-width:600px;
-margin:30px auto;
-display:flex;
-flex-direction:column;
-gap:15px;
-}
+    max-width:600px;
+    margin:30px auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    }
+    
+    .search-card{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    cursor:pointer;
+    transition:0.2s;
+    }
+    
+    .search-card:hover{
+    transform:translateY(-3px);
+    }
+    
+    .search-card h3{
+    margin:0;
+    font-size:20px;
+    }
+    
+    .search-card p{
+    margin:5px 0;
+    color:#666;
+    }
 
-.search-card{
-background:white;
-padding:20px;
-border-radius:12px;
-box-shadow:0 5px 15px rgba(0,0,0,0.08);
-cursor:pointer;
-transition:0.2s;
-}
-
-.search-card:hover{
-transform:translateY(-3px);
-}
-
-.search-card h3{
-margin:0;
-font-size:20px;
-}
-
-.search-card p{
-margin:5px 0;
-color:#666;
-}
-
-.no-result{
-text-align:center;
-margin-top:30px;
-font-size:18px;
-color:#888;
-}
-#results{
+    .no-result{
+    text-align:center;
+    margin-top:30px;
+    font-size:18px;
+    color:#888;
+    }
+    #results{
     max-width:600px;
     margin:30px auto;
     display:flex;
