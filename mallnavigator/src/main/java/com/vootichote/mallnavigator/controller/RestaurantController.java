@@ -24,7 +24,6 @@ public class RestaurantController {
         return restaurantRepository.save(restaurant);
     }
 
-    // 🔥🔥🔥 ADD THIS (สำคัญสุด)
     @GetMapping("/restaurants/search")
     public List<Restaurant> searchRestaurants(@RequestParam String name) {
         return restaurantRepository.findByNameContainingIgnoreCase(name);
